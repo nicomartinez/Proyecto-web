@@ -1,4 +1,4 @@
-·en este archivo se definiran los metodos del manejko de la base
+#en este archivo se definiran los metodos del manejko de la base
 import MySQLdb as db
 
 try:
@@ -6,6 +6,10 @@ try:
   con.execute("CREATE TABLE pacientes values()")
   
   def agregarPaciente(firstName, lastname, cc, prioridad,tiempoIngreso):
-      con.execute(""
+      con.execute("")
+      
+  def agregarPaciente(firstName, lastname, cc, prioridad,tiempoIngreso):
+      con.execute("UPDATE ")
+    
 except:
   print "error"
