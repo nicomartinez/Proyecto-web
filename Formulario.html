@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel = "stylesheet" href = "dist\css\bootstrap.css">
+		<link type="text/css" rel = "stylesheet" href = "dist\css\bootstrap.min.css">
+		<title>pagina en HTML</title>
+	</head>
+
+	<body>
+    <div class = "text-center">
+		<h1 class = "text-center">Registro Datos Paciente</h1>
+		<!--<button type = "button" class = "btn btn-primary">Primary</button>-->
+    <p>Nombres y apellidos</p>
+		<input type="text" class="form-control" placeholder="Nombres">
+		<input type="text" class="form-control" placeholder="Apellidos"><br>
+    <p>Tipo de documento</p>
+    <select class="form-control">
+      <option>Cedula de ciudadania</option>
+      <option>Tarjeta de identidad</option>
+    </select>
+    <input type="text" class="form-control" placeholder="Numero de documento"><br>
+    <p>Prioridad</p>
+    <select class="form-control">
+      <option value = "Alta">Alta</option>
+      <option value = "Media">Media</option>
+      <option value = "Baja">Baja</option>
+    </select>
+		<form role="form">	
+  		<button type="submit" class="btn btn-success">Ingresar</button>
+    </form>
+    </div>
+	</body>
+</html>
