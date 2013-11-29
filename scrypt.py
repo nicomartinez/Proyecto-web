@@ -2,13 +2,13 @@
 import sqlite3 as db
 
 try:
-  con = db.connect("Pacientes.db")
+  con = db.connect("pacientes.db")
   con.execute("CREATE TABLE pacientes values(fisrstName varchar(20), lastName varchar(20), cc INT, prioridad varchar(10), tiempoIngreso Timestamp)")
   
   def agregarPaciente(firstName, lastName, cc, prioridad,tiempoIngreso):
       con.execute("INSERT INTO pacientes VALUES(" + fistName + ", " + lastName + ", " + cc + ", " + prioridad + ", " + tiempoIngreso + ")")
       
-  def agregarPaciente(firstName, lastName, cc, prioridad,tiempoIngreso):
+  def actualizarPaciente(firstName, lastName, cc, prioridad,tiempoIngreso):
       con.execute("UPDATE pacientes SET firstName = " + firtName +",  lastNme = " + lastName + ", cc = " + cc + ", prioridad = " + prioridad + ", tiempoIngreso = " + tiempoIngreso + "WHERE firstName = " + firstName")
       con.commit()
   def borrarPaciente(name):
