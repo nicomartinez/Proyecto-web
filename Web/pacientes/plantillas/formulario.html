@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block titulo %} Formulario Datos {& endblock &}
+{% block encabezado %}<h3 class = "text-center">Registro Datos Paciente</h3>{% endblock %}
+{% block descripcion %}{% endblock %}
+{% block contenido %}
+<form id="formulario" method="post" action="">{% csrf_token %}
+		<table>{{formulario}}</table>
+		<button type="submit" class="btn btn-success" value="Registrar">Ingresar</button>
+</form>
+{% endblock %}

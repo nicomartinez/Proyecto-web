@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block titulo %} Modificar datos de Paciente {& endblock &}
+{% block encabezado %} <h3 class = "text-center">Modificar</h3>{% endblock %}
+{% block descripcion %}<p class = "text-center">en esta pagina se pueden modificar los datos de un paciente especifico</p> {% endblock %}
+{% block contenido %}
+<form method="post" action="">{% csrf_token %}
+	
+	<button type="submit" class="btn btn-success" value="Modificar">Modificar</button>
+</form>
+{% endblock %}

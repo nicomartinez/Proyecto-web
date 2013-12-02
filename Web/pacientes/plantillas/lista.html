@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% block titulo %} Lista de Pacientes {& endblock &}
+{% block encabezado %} <h3 class = "text-center">Lista de Pacientes</h3>{% endblock %}
+{% block descripcion %}en esta pagina esta el listado de los pacientes que han ingresado  {% endblock %}
+{% block contenido %}
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nombres</th>
+      <th>Apellidos</th>
+      <th>Tipo de  Documento</th>
+      <th>Documento de identidad</th>
+      <th>Prioridad</th>
+      <th>Hora de entrada</th>
+     </tr>
+  </thead>
+  <tbody>
+    {% for paciente in lista%}
+      <tr>
+      <td>{{paciente.id}}</td><td>{{paciente.firstName}}</td><td>{{paciente.lastname}}</td><td>{{paciente.tipo_documento}}</td><td>{{paciente.cc}}</td><td>{{paciente.prioridad}}</td><td>{{paciente.tiempo_ingreso}}</td>
+      </tr>
+    {% endfor%}
+  </tbody>
+</table>
+{% endblock %}
